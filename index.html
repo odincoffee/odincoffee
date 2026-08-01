@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>ODIN COFFEE</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      background: #000;
+      overflow-x: hidden;
+    }
+    main {
+      position: relative;
+      width: 100%;
+      max-width: 1366px;
+      margin: 0 auto;
+      line-height: 0;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      border: 0;
+    }
+    .click-area {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      cursor: pointer;
+      background: transparent;
+    }
+    .instagram-link {
+      left: 66.2%;
+      top: 96.55%;
+      width: 30.5%;
+      height: 1.45%;
+    }
+    .store-link {
+      left: 65.8%;
+      top: 98.05%;
+      width: 33.2%;
+      height: 1.75%;
+    }
+    .click-area:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: -2px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="odin-website.svg" alt="오딘커피 웹사이트">
+
+    <a
+      class="click-area instagram-link"
+      href="https://www.instagram.com/odincoffee_2025/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="오딘커피 인스타그램 새 창에서 열기"
+      title="Instagram"
+    ></a>
+
+    <a
+      class="click-area store-link"
+      href="https://smartstore.naver.com/odincoffee"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="오딘커피 스마트스토어 새 창에서 열기"
+      title="Store"
+    ></a>
+  </main>
+</body>
+</html>
