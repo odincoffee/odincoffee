@@ -1,77 +1,71 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="color-scheme" content="light">
-  <title>ODIN COFFEE</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="ODIN Coffee 공식 웹사이트" />
+  <title>ODIN Coffee</title>
   <style>
+    :root { color-scheme: light; }
     * { box-sizing: border-box; }
-    html, body { margin: 0; min-height: 100%; }
-    body {
+    html, body { margin: 0; min-height: 100%; background: #111; }
+    body { font-family: Arial, "Noto Sans KR", sans-serif; }
+    .site-image { display: block; width: 100%; height: auto; background: #fff; }
+    .quick-links {
+      position: fixed;
+      right: max(16px, env(safe-area-inset-right));
+      bottom: max(16px, env(safe-area-inset-bottom));
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .quick-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 150px;
+      min-height: 48px;
+      padding: 12px 18px;
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 999px;
+      color: #fff;
+      background: rgba(16,16,16,.9);
+      box-shadow: 0 8px 24px rgba(0,0,0,.28);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: transform .18s ease, background .18s ease;
+    }
+    .quick-links a:hover,
+    .quick-links a:focus-visible {
       background: #000;
-      overflow-x: hidden;
+      transform: translateY(-2px);
+      outline: 3px solid rgba(255,255,255,.7);
+      outline-offset: 2px;
     }
-    main {
-      position: relative;
-      width: 100%;
-      max-width: 1366px;
-      margin: 0 auto;
-      line-height: 0;
-    }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      border: 0;
-    }
-    .click-area {
-      position: absolute;
-      z-index: 2;
-      display: block;
-      cursor: pointer;
-      background: transparent;
-    }
-    .instagram-link {
-      left: 66.2%;
-      top: 96.55%;
-      width: 30.5%;
-      height: 1.45%;
-    }
-    .store-link {
-      left: 65.8%;
-      top: 98.05%;
-      width: 33.2%;
-      height: 1.75%;
-    }
-    .click-area:focus-visible {
-      outline: 2px solid #fff;
-      outline-offset: -2px;
+    @media (max-width: 600px) {
+      .quick-links {
+        left: max(12px, env(safe-area-inset-left));
+        right: max(12px, env(safe-area-inset-right));
+        bottom: max(12px, env(safe-area-inset-bottom));
+        flex-direction: row;
+      }
+      .quick-links a { min-width: 0; flex: 1; padding: 11px 10px; font-size: 14px; }
     }
   </style>
 </head>
 <body>
   <main>
-    <img src="odin-website.svg" alt="오딘커피 웹사이트">
-
-    <a
-      class="click-area instagram-link"
-      href="https://www.instagram.com/odincoffee_2025/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="오딘커피 인스타그램 새 창에서 열기"
-      title="Instagram"
-    ></a>
-
-    <a
-      class="click-area store-link"
-      href="https://smartstore.naver.com/odincoffee"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="오딘커피 스마트스토어 새 창에서 열기"
-      title="Store"
-    ></a>
+    <img class="site-image" src="odin-website3.svg" alt="ODIN Coffee 웹사이트 디자인" />
   </main>
+
+  <nav class="quick-links" aria-label="바로가기">
+    <a href="https://instagram.com/odincoffee_2025" target="_blank" rel="noopener noreferrer" aria-label="ODIN Coffee 인스타그램 새 창에서 열기">Instagram</a>
+    <a href="https://smartstore.naver.com/odincoffee" target="_blank" rel="noopener noreferrer" aria-label="ODIN Coffee 네이버 스마트스토어 새 창에서 열기">Store</a>
+  </nav>
 </body>
 </html>
