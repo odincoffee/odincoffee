@@ -1,71 +1,38 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="ODIN COFFEE">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="오딘 커피는 좋은 커피의 기준을 만듭니다. 책임 있는 재배부터 고품질 로스팅까지 투명한 커피 공급망을 소개합니다." />
+  <meta name="theme-color" content="#3d220f" />
+  <meta property="og:title" content="ODIN COFFEE" />
+  <meta property="og:description" content="오딘 커피는 좋은 커피의 기준을 만듭니다." />
   <title>ODIN COFFEE</title>
-  <style>
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: #fff; }
-    body { min-width: 320px; }
-    .page {
-      position: relative;
-      width: 100%;
-      max-width: 1366px;
-      margin: 0 auto;
-      line-height: 0;
-    }
-    .page > img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border: 0;
-    }
-    .hotspot {
-      position: absolute;
-      display: block;
-      z-index: 10;
-      background: transparent;
-      text-decoration: none;
-      cursor: pointer;
-      line-height: normal;
-      -webkit-tap-highlight-color: transparent;
-    }
-    /* 최종 이미지의 Contact us 영역에 맞춘 투명 클릭 영역 */
-    .instagram {
-      left: 56.5%;
-      top: 93.85%;
-      width: 40.5%;
-      height: 1.55%;
-    }
-    .store {
-      left: 56.5%;
-      top: 95.48%;
-      width: 42.5%;
-      height: 1.62%;
-    }
-    .hotspot:focus-visible {
-      outline: 3px solid #fff;
-      outline-offset: -3px;
-    }
-  </style>
+  <link rel="preload" as="image" href="assets/odin-webend.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page">
-    <img src="odin-webend.svg" alt="ODIN COFFEE 웹사이트">
+  <main class="page" aria-label="오딘 커피 공식 브랜드 페이지">
+    <section class="artboard" aria-label="오딘 커피 브랜드 소개">
+      <img
+        class="artwork"
+        src="assets/odin-webend.svg"
+        width="1024"
+        height="4396"
+        alt="오딘 커피 소개. 생두 직접 수입과 유기농 인증 관리, 책임 있는 재배, 공정한 수확, 위생적인 가공, 투명한 유통과 공정한 무역, 고품질 로스팅을 소개합니다."
+      />
 
-    <a class="hotspot instagram"
-       href="https://instagram.com/odincoffee_2025"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="ODIN COFFEE 인스타그램 열기"></a>
-
-    <a class="hotspot store"
-       href="https://smartstore.naver.com/odincoffee"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="ODIN COFFEE 스마트스토어 열기"></a>
+      <nav class="link-layer" aria-label="바로가기">
+        <a class="hotspot hotspot-instagram" href="https://www.instagram.com/odincoffee_2025/" target="_blank" rel="noopener noreferrer" aria-label="오딘 커피 인스타그램 새 창으로 열기"></a>
+        <a class="hotspot hotspot-store" href="https://smartstore.naver.com/odincoffee" target="_blank" rel="noopener noreferrer" aria-label="오딘 커피 스마트스토어 새 창으로 열기"></a>
+      </nav>
+    </section>
   </main>
+  <noscript>
+    <p class="noscript-links">
+      <a href="https://www.instagram.com/odincoffee_2025/">Instagram</a> ·
+      <a href="https://smartstore.naver.com/odincoffee">Online Store</a>
+    </p>
+  </noscript>
 </body>
 </html>
