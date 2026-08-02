@@ -1,41 +1,27 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="오딘 커피 브랜드 소개 페이지" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ODIN COFFEE</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body { background: #241407; }
+    .original-layout {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1366 / 5861;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
-  <main class="landing-page" aria-label="오딘 커피 소개 페이지">
-    <img
-      class="landing-image"
-      src="odin-page.svg"
-      alt="오딘 커피 브랜드 소개, 인스타그램 및 스마트스토어 연결 페이지"
-    />
-
-    <!--
-      빨간색 버튼 위에 놓이는 투명 링크 영역입니다.
-      SVG 원본 비율을 기준으로 위치가 자동 조정됩니다.
-    -->
-    <a
-      class="hotspot hotspot-instagram"
-      href="https://www.instagram.com/odincoffee_2025/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="오딘 커피 인스타그램 새 창에서 열기"
-      title="Instagram"
-    ></a>
-
-    <a
-      class="hotspot hotspot-smartstore"
-      href="https://smartstore.naver.com/odincoffee"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="오딘 커피 네이버 스마트스토어 새 창에서 열기"
-      title="Smart Store"
-    ></a>
-  </main>
+  <object
+    class="original-layout"
+    type="image/svg+xml"
+    data="assets/odin-landing.svg"
+    aria-label="ODIN COFFEE 웹사이트"
+  ></object>
 </body>
 </html>
